@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алғашқы веб-бет</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #0284c7;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0369a1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1 id="title">Қош келдіңіз!</h1>
+    <p>Бұл HTML, CSS және JavaScript біріктірілген мысал.</p>
+    <button onclick="changeText()">Басу</button>
+  </div>
+
+  <script>
+    function changeText() {
+      const title = document.getElementById("title");
+      title.innerText = "Нәтиже сәтті орындалды!";
+      title.style.color = "#16a34a";
+    }
+  </script>
+</body>
+</html>

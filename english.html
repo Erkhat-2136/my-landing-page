@@ -1,0 +1,136 @@
+
+
+English course · HTML
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bright English — Ағылшын тілі курстары</title>
+<meta name="description" content="Шағын топтарда ағылшын тілін үйрену. Тегін сынақ сабағы.">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { bg:'var(--bg)', panel:'var(--panel)', soft:'var(--soft)', ink:'var(--ink)', muted:'var(--muted)', accent:'var(--accent)', onaccent:'var(--on-accent)', line:'var(--line)' }
+  } }
+}
+</script>
+<style>
+:root{
+  --bg:#F6F8FC; --panel:#FFFFFF; --soft:#EAF0FB; --ink:#0F1B33; --muted:#51607A; --accent:#2457E6; --on-accent:#FFFFFF; --line:#DCE3EF;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1626;--panel:#16213A;--soft:#121C31;--ink:#EAF0FB;--muted:#A3B1CA;--accent:#7C9DFF;--on-accent:#0E1626;--line:#263554;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0E1626;--panel:#16213A;--soft:#121C31;--ink:#EAF0FB;--muted:#A3B1CA;--accent:#7C9DFF;--on-accent:#0E1626;--line:#263554;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+ 
+<header class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+  <span class="text-2xl font-bold tracking-tight text-accent">Bright English</span>
+  <nav class="hidden space-x-6 md:block">
+    <a href="#about" class="text-muted hover:text-ink">Біз туралы</a>
+    <a href="#contact" class="text-muted hover:text-ink">Байланыс</a>
+  </nav>
+  <a href="#contact" class="rounded-lg bg-accent px-4 py-2 font-medium text-onaccent transition hover:brightness-110">Жазылу</a>
+</header>
+ 
+<section class="mx-auto max-w-6xl items-center justify-between px-6 py-20 text-center md:flex md:text-left">
+  <div class="space-y-6 md:w-1/2">
+    <h1 class="text-4xl font-extrabold leading-tight md:text-5xl">
+      Ағылшынша еркін сөйлеуді <span class="text-accent">3 айда бастаңыз</span>
+    </h1>
+    <p class="text-lg text-muted">
+      Бастауыш деңгейден IELTS-ке дейін. Шағын топтарда, тәжірибелі оқытушылармен сөйлесу практикасына баса назар аударамыз.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 md:justify-start">
+      <a href="#contact" class="rounded-lg bg-accent px-6 py-3 font-medium text-onaccent transition hover:brightness-110">Тегін сынақ сабағына жазылу</a>
+      <a href="#about" class="rounded-lg border border-line px-6 py-3 font-medium transition hover:bg-soft">Толығырақ</a>
+    </div>
+  </div>
+  <div class="mt-10 flex justify-center md:mt-0 md:w-1/2">
+    <svg viewBox="0 0 400 320" class="h-80 w-full max-w-md rounded-2xl border border-line bg-soft" role="img" aria-label="Ағылшын және қазақ тілінде сөйлесіп тұрған екі сөйлеу бұлты">
+      <rect x="40" y="50" width="190" height="90" rx="22" fill="var(--accent)"/>
+      <path d="M80 140l-6 30 36-30z" fill="var(--accent)"/>
+      <text x="135" y="105" text-anchor="middle" font-size="30" font-weight="700" fill="var(--on-accent)" font-family="system-ui,Arial,sans-serif">Hello!</text>
+      <rect x="170" y="180" width="190" height="90" rx="22" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+      <path d="M320 270l6 30-36-30z" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+      <text x="265" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="var(--ink)" font-family="system-ui,Arial,sans-serif">Nice to meet you</text>
+    </svg>
+  </div>
+</section>
+ 
+<section id="about" class="bg-soft py-16">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="mb-12 text-center text-3xl font-bold">Неге бізді таңдайды?</h2>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div class="rounded-xl border border-line bg-panel p-6">
+        <div class="mb-4 text-3xl">🎓</div>
+        <h3 class="mb-2 text-xl font-semibold">Сертификатты оқытушылар</h3>
+        <p class="text-muted">Оқытушылардың барлығында IELTS немесе CELTA сертификаты бар, сабақты тәжірибеден береді.</p>
+      </div>
+      <div class="rounded-xl border border-line bg-panel p-6">
+        <div class="mb-4 text-3xl">👥</div>
+        <h3 class="mb-2 text-xl font-semibold">Шағын топтар</h3>
+        <p class="text-muted">Топта 6–8 адам ғана. Әр студент сабақта сөйлеп, оқытушыдан жеке кері байланыс алады.</p>
+      </div>
+      <div class="rounded-xl border border-line bg-panel p-6">
+        <div class="mb-4 text-3xl">🕒</div>
+        <h3 class="mb-2 text-xl font-semibold">Икемді кесте</h3>
+        <p class="text-muted">Онлайн немесе офлайн, таңертең немесе кешке. Өзіңе ыңғайлы уақытты таңдайсың.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="contact" class="mx-auto max-w-xl px-6 py-20">
+  <div class="rounded-2xl border border-line bg-panel p-8">
+    <h2 class="mb-4 text-center text-2xl font-bold">Тегін сынақ сабағына жазылыңыз</h2>
+    <p class="mb-6 text-center text-muted">Деңгейіңізді анықтап, сізге лайық топты таңдап береміз.</p>
+    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+      <div>
+        <label for="name" class="mb-1 block text-sm font-medium">Есіміңіз</label>
+        <input id="name" type="text" required class="w-full rounded-lg border border-line bg-bg px-4 py-2 text-ink">
+      </div>
+      <div>
+        <label for="phone" class="mb-1 block text-sm font-medium">Телефон нөміріңіз</label>
+        <input id="phone" type="tel" placeholder="+7 (700) 000-00-00" required class="w-full rounded-lg border border-line bg-bg px-4 py-2 text-ink">
+      </div>
+      <div>
+        <label for="level" class="mb-1 block text-sm font-medium">Деңгейіңіз</label>
+        <select id="level" class="w-full rounded-lg border border-line bg-bg px-4 py-2 text-ink">
+          <option>Білмеймін, анықтап беріңіздер</option>
+          <option>Бастауыш (A1–A2)</option>
+          <option>Орта (B1–B2)</option>
+          <option>Жоғары (C1)</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full rounded-lg bg-accent py-3 font-medium text-onaccent transition hover:brightness-110">Жазылу</button>
+    </form>
+    <p id="successMsg" role="status" class="mt-4 hidden text-center font-medium text-accent">Рақмет! Өтінішіңіз қабылданды, жақын арада хабарласамыз.</p>
+  </div>
+</section>
+ 
+<footer class="border-t border-line py-6 text-center text-sm text-muted">
+  &copy; 2026 Bright English. Барлық құқықтар қорғалған.
+</footer>
+ 
+<script>
+function handleFormSubmit(e){
+  e.preventDefault();
+  document.getElementById('successMsg').classList.remove('hidden');
+  e.target.reset();
+}
+</script>
+</body>
+</html>
+ 
+Ответ Claude завершен
